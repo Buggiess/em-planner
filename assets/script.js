@@ -6,7 +6,7 @@ $(".row").each(function (){
     var hour = $(this).data("hour");
     var message = localStorage.getItem(hour);
     $(this).find(".description").text(message);
-    $(this).addClass( hour > current ? "future" : hour < current ? "past" : "present");
+    $(this).addClass(hour > current ? "future" : hour < current ? "past" : "present");
 
 });
 
